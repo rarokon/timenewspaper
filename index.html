@@ -47,26 +47,6 @@
 
         /*for read more option */
 
-        /* input[type="checkbox"] {
-            position: absolute;
-            left: -999em;
-        }
-
-        label {
-            display: block;
-            margin: 1em 0;
-        }
-
-
-        #hidden {
-            max-height: 0;
-            overflow: hidden;
-        }
-
-        #readmore:checked~#hidden {
-            max-height: 100%;
-        } */
-
         input[type="checkbox"] {
             position: absolute;
             left: -999em;
@@ -75,6 +55,11 @@
         .lbl-class {
             display: block;
             margin: 1em 0;
+            
+        }
+        .lbl-class:hover{
+            color: red;
+            cursor: pointer;
         }
 
         .hidden {
@@ -159,45 +144,195 @@
     </section>
     <!--Details news section-->
     <section id="newsdetails">
-        <div class="headingdiv">
-            <h2 style="text-align: left;"><i class="fa-solid fa-globe"></i>&nbsp;Global News</h2>
-        </div>
-        <div>
-            <img src="./resources/global.jpg" alt="Image of Global News" class="new-detail-img">
-        </div>
-        <div>
-            <h4><i class="fa-solid fa-rocket"></i>&nbsp;NASA launches probe to study if life possible on icy Jupiter
-                moon</h4>
-        </div>
-        <p><i class="fa-solid fa-calendar-days"></i>&nbsp;15 October, 2024, 22:06</p>
-        <div class="newscontent">
-            <article>
-                <div>
-                    <p>NASA’s Europa Clipper probe blasted off from Florida on Monday, bound for an icy moon of Jupiter
-                        to discover whether it has the ingredients to support life.</p>
-                    <input class="readmore" id="readmore" type="checkbox">
-                    <label for="readmore" class="lbl-class">
-                        read more...
-                    </label>
-                    <div class="hidden">
-                        <p>
-                            Lift-off aboard a powerful SpaceX Falcon Heavy rocket took place shortly after noon (1600
-                            GMT), with the probe set to reach Jupiter’s moon Europa in five and a half years.
-                            <br>
-                            NASA later confirmed that it had successfully acquired a signal from the probe and that its
-                            massive solar arrays — designed to capture the weak light that reaches Jupiter — had fully
-                            unfolded.
-                            <br>
-                            The mission will allow the US space agency to uncover new details about Europa, which
-                            scientists believe could hold an ocean beneath its icy surface.
-                            <br>
-                            ‘With Europa Clipper, we’re not searching for life on Europa, but we’re trying to see if
-                            this ocean world is habitable, and that means we’re looking for the water,’ NASA official
-                            Gina DiBraccio said ahead of the launch.
-                        </p>
+        <!--1st News-->
+        <div id="global-news">
+            <div class="headingdiv">
+                <h2 style="text-align: left;"><i class="fa-solid fa-globe"></i>&nbsp;Global News</h2>
+            </div>
+            <div>
+                <img src="./resources/global.jpg" alt="Image of Global News" class="new-detail-img">
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-rocket"></i>&nbsp;NASA launches probe to study if life possible on icy Jupiter
+                    moon</h4>
+            </div>
+            <p><i class="fa-solid fa-calendar-days"></i>&nbsp;15 October, 2024, 22:06</p>
+            <div class="newscontent">
+                <article id="nasa-icy-moon">
+                    <div>
+                        <p>NASA’s Europa Clipper probe blasted off from Florida on Monday, bound for an icy moon of
+                            Jupiter
+                            to discover whether it has the ingredients to support life.</p>
+                        <!--read more option-->
+                        <input class="readmore" id="readmore-global" type="checkbox">
+                        <label for="readmore-global" class="lbl-class">
+                            read more...
+                        </label>
+                        <div class="hidden">
+                            <p>
+                                Lift-off aboard a powerful SpaceX Falcon Heavy rocket took place shortly after noon
+                                (1600 GMT), with the probe set to reach Jupiter’s moon Europa in five and a half years.
+                                <br>
+                                NASA later confirmed that it had successfully acquired a signal from the probe and that
+                                its massive solar arrays — designed to capture the weak light that reaches Jupiter — had
+                                fully unfolded.
+                                <br>
+                                The mission will allow the US space agency to uncover new details about Europa, which
+                                scientists believe could hold an ocean beneath its icy surface.
+                                <br>
+                                ‘With Europa Clipper, we’re not searching for life on Europa, but we’re trying to see if
+                                this ocean world is habitable, and that means we’re looking for the water,’ NASA
+                                official Gina DiBraccio said ahead of the launch.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
+        </div>
+        <!--2nd news-->
+        <div id="business-news">
+            <div class="headingdiv">
+                <h2 style="text-align: left;"><i class="fa-solid fa-business-time"></i>&nbsp;Business News</h2>
+            </div>
+            <div>
+                <img src="./resources/business.jpg" alt="Image of busniss News" class="new-detail-img">
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-shirt"></i>&nbsp;RMG exports from Bangladesh to EU rise in Sept</h4>
+            </div>
+            <p><i class="fa-solid fa-calendar-days"></i>&nbsp;19 November, 2024, 22:51 </p>
+            <div class="newscontent">
+                <article id="apparel-news">
+                    <div>
+                        <p>Bangladesh’s apparel exports to the European Union in September rose by 6.9 per cent
+                            year-on-year to 1.53 billion euros, up from 1.43 billion euros in the same period of 2023,
+                            driven largely by knitwear, while woven garments posted slightly slower growth.
+                        </p>
+                        <!--read more option-->
+                        <input class="readmore" id="readmore-business" type="checkbox">
+                        <label for="readmore-business" class="lbl-class">
+                            read more...
+                        </label>
+                        <div class="hidden">
+                            <p>
+                                However, Bangladesh’s apparel exports to the EU declined by 2.47 per cent to 13.43
+                                billion euros in January-September of 2024, down from 13.77 billion euros in the same
+                                period of 2023, due to significant drops in January, February and March, according to
+                                data from Eurostat, the statistical office of the EU.
+                                <br> <br>
+                                The overall apparel imports by the EU from different countries in the first nine months
+                                of 2024 decreased by 2.28 per cent to 62.86 billion euros from 64.46 billion euros in
+                                the same period of the previous year.
+                                <br> <br>
+                                The data revealed that, during the period, the EU’s apparel imports from nearly all
+                                major supplier countries experienced negative growth, with the exception of that from
+                                Pakistan.
+                                <br> <br>
+                                ‘While global demand has been improving in recent months, Bangladesh is struggling to
+                                fully capitalise on the opportunity due to eroding competitive advantages, primarily
+                                caused by high utility prices, inadequate gas supply and the recent wage hike,’ said
+                                former Bangladesh Knitwear Manufacturers and Exporters Association president Fazlul
+                                Hoque.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!--3rd news-->
+        <div id="technology-news">
+            <div class="headingdiv">
+                <h2 style="text-align: left;"><i class="fa-solid fa-microchip"></i>&nbsp;Technology News</h2>
+            </div>
+            <div>
+                <img src="./resources/xiaomi.jpg" alt="Image of Technology News" class="new-detail-img">
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-mobile"></i>&nbsp;Xiaomi Bangladesh Launches Xiaomi Redmi 14C</h4>
+            </div>
+            <p><i class="fa-solid fa-calendar-days"></i>&nbsp;07 October, 2024, 20:40</p>
+            <div class="newscontent">
+                <article id="xiaomi-redmi-14c">
+                    <div>
+                        <p>Xiaomi Bangladesh has officially launched the all-new Xiaomi Redmi 14C, says a press release.
+                        </p>
+                        <!--read more option-->
+                        <input class="readmore" id="readmore-technology" type="checkbox">
+                        <label for="readmore-technology" class="lbl-class">
+                            read more...
+                        </label>
+                        <div class="hidden">
+                            <p>
+                                At the heart of the Xiaomi Redmi 14C is its 6.88-inch HD+ Dot Drop display, offering a
+                                1640x720 resolution and a pixel density of 260 PPI. Most notably, the display supports a
+                                120Hz refresh rate, ensuring ultra-smooth scrolling and responsiveness, ideal for
+                                gaming, video playback, and browsing. <br> <br>
+                                This high refresh rate significantly enhances the user experience by providing fluid
+                                motion without lag, especially during high-action gaming or dynamic visual content.
+                                <br> <br>
+                                The touch sampling rate of 240Hz further improves the responsiveness, making every
+                                interaction feel instantaneous. With a screen brightness of 450 nits (typical) and 600
+                                nits HBM (High Brightness Mode), users can enjoy vibrant visuals even under direct
+                                sunlight.
+                                <br> <br>
+                                It’s not just the performance of the phone that’s worth talking about, but the design
+                                too. Available in three eye-catching colours—Midnight Black, Dreamy Purple, and Starry
+                                Blue—the Xiaomi Redmi 14C exudes elegance. Each shade has been crafted to enhance the
+                                phone’s aesthetics, with a unique star trail pattern on the back that adds a subtle yet
+                                sophisticated touch to the overall design.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!--4th news-->
+        <div id="sports-news">
+            <div class="headingdiv">
+                <h2 style="text-align: left;"><i class="fa-solid fa-person-skiing"></i>&nbsp;Technology News</h2>
+            </div>
+            <div>
+                <img src="./resources/sports.jpg" alt="Image of sports News" class="new-detail-img">
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-futbol"></i>&nbsp;Ranieri begins Roma salvage mission at Serie A table toppers
+                    Napoli</h4>
+            </div>
+            <p><i class="fa-solid fa-calendar-days"></i>&nbsp;22 November, 2024, 23:21</p>
+            <div class="newscontent">
+                <article id="footbal-news">
+                    <div>
+                        <p>Claudio Ranieri’s baptism of fire as Roma boss begins on Sunday when he leads his boyhood
+                            club at Serie A leaders Napoli, one of a trio of tough tests awaiting the veteran coach as
+                            the Italian top flight gets back underway.
+                        </p>
+                        <!--read more option-->
+                        <input class="readmore" id="readmore-sports" type="checkbox">
+                        <label for="readmore-sports" class="lbl-class">
+                            read more...
+                        </label>
+                        <div class="hidden">
+                            <p>
+                                Lifelong Roma fan Ranieri said after he was hired last week that he has “no time for
+                                mistakes” as he attempts to salvage something from a season which looks as good as over.
+                                <br> <br>
+                                Roma head to Napoli in 12th, four points above the relegation zone after four defeats in
+                                five league matches under Ranieri’s predecessor Ivan Juric, who was sacked following a
+                                home loss at the hands of Bologna before the international break.
+                                <br> <br>
+                                But while a drop to Serie B is unlikely given the quality of the squad and Ranieri’s
+                                experience, Roma are already 12 points away from the Champions League positions which
+                                are a key objective of the billionaire Friedkin family who own the club and have been
+                                the target of supporter ire.
+                                <br> <br>
+                                Roma haven’t qualified for Europe’s elite club competition since 2018 and fans were
+                                outraged by the sacking of idol Daniele De Rossi in September, after he was given a
+                                three-year contract only a few months before.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 </body>
