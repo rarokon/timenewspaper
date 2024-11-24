@@ -5,6 +5,10 @@ common tags:
     div
     semantics tag
     form
+    video
+    details
+    summery
+    img
 
 
     Todo    
