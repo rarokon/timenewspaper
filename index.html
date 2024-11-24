@@ -45,6 +45,11 @@
             width: 400px;
         }
 
+        textarea {
+            width: 200px;
+            height: 100px;
+        }
+
         /*for read more option */
 
         input[type="checkbox"] {
@@ -55,9 +60,10 @@
         .lbl-class {
             display: block;
             margin: 1em 0;
-            
+
         }
-        .lbl-class:hover{
+
+        .lbl-class:hover {
             color: red;
             cursor: pointer;
         }
@@ -335,6 +341,37 @@
             </div>
         </div>
     </section>
+    <!--Feedback form-->
+    <div id="Feedback-submit">
+        <div class="headingdiv">
+            <h2 style="text-align: left;"><i class="fa-solid fa-pencil"></i>&nbsp;Submit Your News</h2>
+        </div>
+        <form action="submit">
+            <div>
+                <h2>News Submit Form</h2>
+            </div>
+            <div>
+                <label for="YourName">Your Name:</label><br>
+                <input type="text" id="YourName" placeholder="Enter Your Name" required>
+            </div>
+
+            <div>
+                <label for="YourEmail">Your Email:</label><br>
+                <input type="text" id="YourEmail" placeholder="Enter Your Email" required>
+            </div>
+
+            <div>
+                <label for="Feedback">Feedback:</label><br>
+                <textarea id="Feedback" placeholder="Enter Your Feedback" required></textarea>
+            </div>
+            <i></i>
+            <button type="submit" class="btn btn-success">
+                <i class="fa-solid fa-paper-plane"></i> Submit
+            </button>
+
+            <!-- <input type="submit" class="fa-solid fa-right-to-bracket" value="&#xf043; Submit"> -->
+        </form>
+    </div>
 </body>
 
 </html>
