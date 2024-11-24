@@ -13,7 +13,7 @@ common tags:
     3. add marquee  --done
     4. add navigation bar for menu --- done
     5. add news presenting table  --- done
-    6. add new with video 
+    6. add new with photo 
     7. add read more option
     8. add video
     9. add footer

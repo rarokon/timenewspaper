@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
+
+    <style media="screen">
         .headingdiv {
             background-color: dodgerblue;
             text-align: center;
@@ -37,6 +38,52 @@
             background-color: dodgerblue;
             text-align: center;
             color: white;
+        }
+
+        .new-detail-img {
+            height: 400px;
+            width: 400px;
+        }
+
+        /*for read more option */
+
+        /* input[type="checkbox"] {
+            position: absolute;
+            left: -999em;
+        }
+
+        label {
+            display: block;
+            margin: 1em 0;
+        }
+
+
+        #hidden {
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        #readmore:checked~#hidden {
+            max-height: 100%;
+        } */
+
+        input[type="checkbox"] {
+            position: absolute;
+            left: -999em;
+        }
+
+        .lbl-class {
+            display: block;
+            margin: 1em 0;
+        }
+
+        .hidden {
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .readmore:checked~.hidden {
+            max-height: 100%;
         }
     </style>
 
@@ -108,6 +155,49 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </section>
+    <!--Details news section-->
+    <section id="newsdetails">
+        <div class="headingdiv">
+            <h2 style="text-align: left;"><i class="fa-solid fa-globe"></i>&nbsp;Global News</h2>
+        </div>
+        <div>
+            <img src="./resources/global.jpg" alt="Image of Global News" class="new-detail-img">
+        </div>
+        <div>
+            <h4><i class="fa-solid fa-rocket"></i>&nbsp;NASA launches probe to study if life possible on icy Jupiter
+                moon</h4>
+        </div>
+        <p><i class="fa-solid fa-calendar-days"></i>&nbsp;15 October, 2024, 22:06</p>
+        <div class="newscontent">
+            <article>
+                <div>
+                    <p>NASA’s Europa Clipper probe blasted off from Florida on Monday, bound for an icy moon of Jupiter
+                        to discover whether it has the ingredients to support life.</p>
+                    <input class="readmore" id="readmore" type="checkbox">
+                    <label for="readmore" class="lbl-class">
+                        read more...
+                    </label>
+                    <div class="hidden">
+                        <p>
+                            Lift-off aboard a powerful SpaceX Falcon Heavy rocket took place shortly after noon (1600
+                            GMT), with the probe set to reach Jupiter’s moon Europa in five and a half years.
+                            <br>
+                            NASA later confirmed that it had successfully acquired a signal from the probe and that its
+                            massive solar arrays — designed to capture the weak light that reaches Jupiter — had fully
+                            unfolded.
+                            <br>
+                            The mission will allow the US space agency to uncover new details about Europa, which
+                            scientists believe could hold an ocean beneath its icy surface.
+                            <br>
+                            ‘With Europa Clipper, we’re not searching for life on Europa, but we’re trying to see if
+                            this ocean world is habitable, and that means we’re looking for the water,’ NASA official
+                            Gina DiBraccio said ahead of the launch.
+                        </p>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 </body>
