@@ -8,9 +8,9 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style media="screen">
+    <style>
         .headingdiv {
-            background-color: dodgerblue;
+            background-color: navy;
             text-align: center;
             color: white;
 
@@ -22,7 +22,8 @@
             /* padding-top: 10px;
             display: inline-block; */
         }
-
+    
+        /*navigation css*/
         li {
             display: inline;
         }
@@ -35,7 +36,7 @@
         }
 
         th {
-            background-color: dodgerblue;
+            background-color: navy;
             text-align: center;
             color: white;
         }
@@ -48,33 +49,6 @@
         textarea {
             width: 200px;
             height: 100px;
-        }
-
-        /*for read more option */
-
-        input[type="checkbox"] {
-            position: absolute;
-            left: -999em;
-        }
-
-        .lbl-class {
-            display: block;
-            margin: 1em 0;
-
-        }
-
-        .lbl-class:hover {
-            color: red;
-            cursor: pointer;
-        }
-
-        .hidden {
-            max-height: 0;
-            overflow: hidden;
-        }
-
-        .readmore:checked~.hidden {
-            max-height: 100%;
         }
     </style>
 
@@ -89,26 +63,30 @@
             <h1 class="headingfont"><img src="./resources/newspaperlogo.png" alt="newspaperlogo" class="logo"><span
                     style="position: relative; top:-8px; bottom: 0%;">The
                     Daily Time</span></h1>
-            <p><em> We news for lives!</em></p>
+            <div class="dialogue">
+                <p><em> We news for lives!</em></p>
+            </div>
+
         </div>
         <!--News heading marquee to left-->
         <div class="headingdiv">
-            <marquee behavior="--News" direction="left"> Head Lines: Temperature in Kurigram drops to 16 degrees
+            <marquee behavior="--News" direction="left"> Head Lines: Temperature in Kurigram
+                drops to 16 degrees
                 Celsius| Outstanding Learner Awards held| Wealthy nations offer $250b on climate but pressed for more|
-                UN
-                climate chief urges G20 to spur tense COP29 negotiations| Meghna Bank PLC Signs Agreement with Chaldal
+                UN climate chief urges G20 to spur tense COP29 negotiations| Meghna Bank PLC Signs Agreement with
+                Chaldal
                 Limited </marquee>
         </div>
     </header>
-    <!--Navigation for news menu-->
+    <!--Navigation bar for news menu-->
     <div class="headingdiv">
         <nav>
             <ul>
                 <li><i class="fa fa-home"></i><strong>Head Line</strong></li>
-                <li><i class="fas fa-address-card"></i><strong>Iternational News</strong></li>
-                <li><i class="fas fa-headphones"></i><strong>Tech News</strong></li>
-                <li><i class="far fa-futbol"></i><strong>Sports Corner</strong></li>
-                <li><i class="fa-solid fa-handshake-angle"></i><strong>Help Line</strong></li>
+                <li>&nbsp;&nbsp;<i class="fas fa-address-card"></i><strong>&nbsp;Iternational News</strong></li>
+                <li>&nbsp;&nbsp;<i class="fas fa-headphones"></i><strong>&nbsp;Tech News</strong></li>
+                <li>&nbsp;&nbsp;<i class="far fa-futbol"></i><strong>&nbsp;Sports Corner</strong></li>
+                <li>&nbsp;&nbsp;<i class="fa-solid fa-handshake-angle"></i><strong>&nbsp;Help Line</strong></li>
             </ul>
         </nav>
     </div>
@@ -150,7 +128,7 @@
     </section>
     <!--Details news section-->
     <section id="newsdetails">
-        <!--1st News-->
+        <!--Global News article-->
         <div id="global-news">
             <div class="headingdiv">
                 <h2 style="text-align: left;"><i class="fa-solid fa-globe"></i>&nbsp;Global News</h2>
@@ -170,32 +148,36 @@
                             Jupiter
                             to discover whether it has the ingredients to support life.</p>
                         <!--read more option-->
-                        <input class="readmore" id="readmore-global" type="checkbox">
-                        <label for="readmore-global" class="lbl-class">
-                            read more...
-                        </label>
-                        <div class="hidden">
-                            <p>
-                                Lift-off aboard a powerful SpaceX Falcon Heavy rocket took place shortly after noon
-                                (1600 GMT), with the probe set to reach Jupiter’s moon Europa in five and a half years.
-                                <br>
-                                NASA later confirmed that it had successfully acquired a signal from the probe and that
-                                its massive solar arrays — designed to capture the weak light that reaches Jupiter — had
-                                fully unfolded.
-                                <br>
-                                The mission will allow the US space agency to uncover new details about Europa, which
-                                scientists believe could hold an ocean beneath its icy surface.
-                                <br>
-                                ‘With Europa Clipper, we’re not searching for life on Europa, but we’re trying to see if
-                                this ocean world is habitable, and that means we’re looking for the water,’ NASA
-                                official Gina DiBraccio said ahead of the launch.
-                            </p>
-                        </div>
+                        <details>
+                            <summary>read more...</summary>
+                            <div>
+                                <p>
+                                    Lift-off aboard a powerful SpaceX Falcon Heavy rocket took place shortly after noon
+                                    (1600 GMT), with the probe set to reach Jupiter’s moon Europa in five and a half
+                                    years.
+                                    <br><br>
+                                    NASA later confirmed that it had successfully acquired a signal from the probe and
+                                    that
+                                    its massive solar arrays — designed to capture the weak light that reaches Jupiter —
+                                    had
+                                    fully unfolded.
+                                    <br><br>
+                                    The mission will allow the US space agency to uncover new details about Europa,
+                                    which
+                                    scientists believe could hold an ocean beneath its icy surface.
+                                    <br><br>
+                                    ‘With Europa Clipper, we’re not searching for life on Europa, but we’re trying to
+                                    see if
+                                    this ocean world is habitable, and that means we’re looking for the water,’ NASA
+                                    official Gina DiBraccio said ahead of the launch.
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </article>
             </div>
         </div>
-        <!--2nd news-->
+        <!--Business News Article-->
         <div id="business-news">
             <div class="headingdiv">
                 <h2 style="text-align: left;"><i class="fa-solid fa-business-time"></i>&nbsp;Business News</h2>
@@ -215,37 +197,42 @@
                             driven largely by knitwear, while woven garments posted slightly slower growth.
                         </p>
                         <!--read more option-->
-                        <input class="readmore" id="readmore-business" type="checkbox">
-                        <label for="readmore-business" class="lbl-class">
-                            read more...
-                        </label>
-                        <div class="hidden">
-                            <p>
-                                However, Bangladesh’s apparel exports to the EU declined by 2.47 per cent to 13.43
-                                billion euros in January-September of 2024, down from 13.77 billion euros in the same
-                                period of 2023, due to significant drops in January, February and March, according to
-                                data from Eurostat, the statistical office of the EU.
-                                <br> <br>
-                                The overall apparel imports by the EU from different countries in the first nine months
-                                of 2024 decreased by 2.28 per cent to 62.86 billion euros from 64.46 billion euros in
-                                the same period of the previous year.
-                                <br> <br>
-                                The data revealed that, during the period, the EU’s apparel imports from nearly all
-                                major supplier countries experienced negative growth, with the exception of that from
-                                Pakistan.
-                                <br> <br>
-                                ‘While global demand has been improving in recent months, Bangladesh is struggling to
-                                fully capitalise on the opportunity due to eroding competitive advantages, primarily
-                                caused by high utility prices, inadequate gas supply and the recent wage hike,’ said
-                                former Bangladesh Knitwear Manufacturers and Exporters Association president Fazlul
-                                Hoque.
-                            </p>
-                        </div>
+                        <details>
+                            <summary>read more...</summary>
+                            <div>
+                                <p>
+                                    However, Bangladesh’s apparel exports to the EU declined by 2.47 per cent to 13.43
+                                    billion euros in January-September of 2024, down from 13.77 billion euros in the
+                                    same
+                                    period of 2023, due to significant drops in January, February and March, according
+                                    to
+                                    data from Eurostat, the statistical office of the EU.
+                                    <br> <br>
+                                    The overall apparel imports by the EU from different countries in the first nine
+                                    months
+                                    of 2024 decreased by 2.28 per cent to 62.86 billion euros from 64.46 billion euros
+                                    in
+                                    the same period of the previous year.
+                                    <br> <br>
+                                    The data revealed that, during the period, the EU’s apparel imports from nearly all
+                                    major supplier countries experienced negative growth, with the exception of that
+                                    from
+                                    Pakistan.
+                                    <br> <br>
+                                    ‘While global demand has been improving in recent months, Bangladesh is struggling
+                                    to
+                                    fully capitalise on the opportunity due to eroding competitive advantages, primarily
+                                    caused by high utility prices, inadequate gas supply and the recent wage hike,’ said
+                                    former Bangladesh Knitwear Manufacturers and Exporters Association president Fazlul
+                                    Hoque.
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </article>
             </div>
         </div>
-        <!--3rd news-->
+        <!--Technology news article-->
         <div id="technology-news">
             <div class="headingdiv">
                 <h2 style="text-align: left;"><i class="fa-solid fa-microchip"></i>&nbsp;Technology News</h2>
@@ -263,36 +250,42 @@
                         <p>Xiaomi Bangladesh has officially launched the all-new Xiaomi Redmi 14C, says a press release.
                         </p>
                         <!--read more option-->
-                        <input class="readmore" id="readmore-technology" type="checkbox">
-                        <label for="readmore-technology" class="lbl-class">
-                            read more...
-                        </label>
-                        <div class="hidden">
-                            <p>
-                                At the heart of the Xiaomi Redmi 14C is its 6.88-inch HD+ Dot Drop display, offering a
-                                1640x720 resolution and a pixel density of 260 PPI. Most notably, the display supports a
-                                120Hz refresh rate, ensuring ultra-smooth scrolling and responsiveness, ideal for
-                                gaming, video playback, and browsing. <br> <br>
-                                This high refresh rate significantly enhances the user experience by providing fluid
-                                motion without lag, especially during high-action gaming or dynamic visual content.
-                                <br> <br>
-                                The touch sampling rate of 240Hz further improves the responsiveness, making every
-                                interaction feel instantaneous. With a screen brightness of 450 nits (typical) and 600
-                                nits HBM (High Brightness Mode), users can enjoy vibrant visuals even under direct
-                                sunlight.
-                                <br> <br>
-                                It’s not just the performance of the phone that’s worth talking about, but the design
-                                too. Available in three eye-catching colours—Midnight Black, Dreamy Purple, and Starry
-                                Blue—the Xiaomi Redmi 14C exudes elegance. Each shade has been crafted to enhance the
-                                phone’s aesthetics, with a unique star trail pattern on the back that adds a subtle yet
-                                sophisticated touch to the overall design.
-                            </p>
-                        </div>
+                        <details>
+                            <summary>read more...</summary>
+                            <div>
+                                <p>
+                                    At the heart of the Xiaomi Redmi 14C is its 6.88-inch HD+ Dot Drop display, offering
+                                    a
+                                    1640x720 resolution and a pixel density of 260 PPI. Most notably, the display
+                                    supports a
+                                    120Hz refresh rate, ensuring ultra-smooth scrolling and responsiveness, ideal for
+                                    gaming, video playback, and browsing. <br> <br>
+                                    This high refresh rate significantly enhances the user experience by providing fluid
+                                    motion without lag, especially during high-action gaming or dynamic visual content.
+                                    <br> <br>
+                                    The touch sampling rate of 240Hz further improves the responsiveness, making every
+                                    interaction feel instantaneous. With a screen brightness of 450 nits (typical) and
+                                    600
+                                    nits HBM (High Brightness Mode), users can enjoy vibrant visuals even under direct
+                                    sunlight.
+                                    <br> <br>
+                                    It’s not just the performance of the phone that’s worth talking about, but the
+                                    design
+                                    too. Available in three eye-catching colours—Midnight Black, Dreamy Purple, and
+                                    Starry
+                                    Blue—the Xiaomi Redmi 14C exudes elegance. Each shade has been crafted to enhance
+                                    the
+                                    phone’s aesthetics, with a unique star trail pattern on the back that adds a subtle
+                                    yet
+                                    sophisticated touch to the overall design.
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </article>
             </div>
         </div>
-        <!--4th news-->
+        <!--Sports news Article-->
         <div id="sports-news">
             <div class="headingdiv">
                 <h2 style="text-align: left;"><i class="fa-solid fa-person-skiing"></i>&nbsp;Sports News</h2>
@@ -311,76 +304,86 @@
                             mid-February as the iconic stadium undergoes modernisation and expansion work.
                         </p>
                         <!--read more option-->
-                        <input class="readmore" id="readmore-sports" type="checkbox">
-                        <label for="readmore-sports" class="lbl-class">
-                            read more...
-                        </label>
-                        <div class="hidden">
-                            <p>
-                                The Spanish giants released a statement saying their La Liga home games against Valencia
-                                and Alaves, provisionally scheduled on January 26 and February 2 respectively, would be
-                                played at their current Montjuic Olympic stadium.
-                                <br> <br>
-                                Barcelona cited UEFA rules preventing clubs from changing stadiums during the Champions
-                                League's opening phase and ‘the logistical difficulties and extra costs’ if they kept
-                                open two grounds at the same time.
-                                <br> <br>
-                                The Camp Nou could instead host the Catalan club's following home league clash against
-                                Rayo Vallecano on February 16.
-                                <br> <br>
-                                Barcelona said last month they were aiming to return to the Camp Nou by the end of 2024
-                                with an initial capacity of 62,000.
-                                <br><br>
-                                The stadium should be completed in the summer of 2026 with a capacity of 105,000, when
-                                the project dubbed ‘Espai Barca’ will be finished and the stadium roof installed.
-                            </p>
-                        </div>
+                        <details>
+                            <summary>read more...</summary>
+                            <div>
+                                <p>
+                                    The Spanish giants released a statement saying their La Liga home games against
+                                    Valencia
+                                    and Alaves, provisionally scheduled on January 26 and February 2 respectively, would
+                                    be
+                                    played at their current Montjuic Olympic stadium.
+                                    <br> <br>
+                                    Barcelona cited UEFA rules preventing clubs from changing stadiums during the
+                                    Champions
+                                    League's opening phase and ‘the logistical difficulties and extra costs’ if they
+                                    kept
+                                    open two grounds at the same time.
+                                    <br> <br>
+                                    The Camp Nou could instead host the Catalan club's following home league clash
+                                    against
+                                    Rayo Vallecano on February 16.
+                                    <br> <br>
+                                    Barcelona said last month they were aiming to return to the Camp Nou by the end of
+                                    2024
+                                    with an initial capacity of 62,000.
+                                    <br><br>
+                                    The stadium should be completed in the summer of 2026 with a capacity of 105,000,
+                                    when
+                                    the project dubbed ‘Espai Barca’ will be finished and the stadium roof installed.
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </article>
             </div>
         </div>
     </section>
-    <!--Feedback form-->
+    <!-- User Feedback form-->
     <div id="Feedback-submit">
         <div class="headingdiv">
             <h2 style="text-align: left;"><i class="fa-solid fa-pencil"></i>&nbsp;Submit Your News</h2>
         </div>
-        <form action="submit">
-            <div>
-                <h2>News Submit Form</h2>
-            </div>
-            <div>
-                <label for="YourName">Your Name:</label><br>
-                <input type="text" id="YourName" placeholder="Enter Your Name" required>
-            </div>
-            <br>
-            <div>
-                <label for="YourEmail">Your Email:</label><br>
-                <input type="text" id="YourEmail" placeholder="Enter Your Email" required>
-            </div>
-            <br>
-            <div>
-                <label for="Feedback">Feedback:</label><br>
-                <textarea id="Feedback" placeholder="Enter Your Feedback" required></textarea>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-success">
-                <i class="fa-solid fa-paper-plane"></i> Submit
-            </button>
+        <fieldset style="border: 1px solid gray; ">
+            <legend>Feedback Form</legend>
+            <form action="submit">
+                <div>
+                    <label for="YourName">Your Name:</label><br>
+                    <input type="text" id="YourName" placeholder="Enter Your Name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="YourEmail">Your Email:</label><br>
+                    <input type="text" id="YourEmail" placeholder="Enter Your Email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="Feedback">Feedback:</label><br>
+                    <textarea id="Feedback" placeholder="Enter Your Feedback" required></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success">
+                    <i class="fa-solid fa-paper-plane"></i> Submit
+                </button>
 
-            <!-- <input type="submit" class="fa-solid fa-right-to-bracket" value="&#xf043; Submit"> -->
-        </form>
+                <!-- <input type="submit" class="fa-solid fa-right-to-bracket" value="&#xf043; Submit"> -->
+            </form>
+        </fieldset>
     </div>
 </body>
-<!--how to post video-->
-<div id="how-to-post">
-    <div class="headingdiv">
-        <h2 style="text-align: left;"><i class="fa-solid fa-paper-plane"></i>&nbsp;How To Post</h2>
+<!--video section-->
+<section id="Video">
+
+    <div id="how-to-post">
+        <div class="headingdiv">
+            <h2 style="text-align: left;"><i class="fa-solid fa-paper-plane"></i>&nbsp;How To Post</h2>
+        </div>
+        <video controls poster="./Resources/postvideo.jpg" width="600">
+            <source src="./Resources/postvideo.mp4">
+        </video>
     </div>
-    <video controls poster="./Resources/mernenvironment.jpg" width="600">
-        <source src="./Resources/mernenvironment.mp4">
-    </video>
-</div>
+
+</section>
 <!--Footer-->
 <footer>
     <div id="footer">

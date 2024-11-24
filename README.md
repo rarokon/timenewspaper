@@ -16,5 +16,5 @@ common tags:
     6. add new with photo -- done
     7. add read more option ---done
     8. add form --- done
-    9. add video
-    10. add footer
+    9. add video ---done
+    10. add footer --- done
